@@ -118,3 +118,14 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* In your globals.css */
+[data-state="open"][data-side="right"] {
+  width: 640px !important;
+}
+
+@media (min-width: 640px) {
+  [data-state="open"][data-side="right"] {
+    width: 740px !important;
+  }
+}

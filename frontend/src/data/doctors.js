@@ -9,7 +9,13 @@ export const doctors = [
     fee: 550,
     availability: "Available in 1 minute",
     consultationMode: "Online",
-    image: "https://images.apollo247.in/doctors/c5693ea9-f45f-4d13-ba8d-5d72418f58ed-1747392071474.jpg?tr=w-150,c-at_max,f-auto,q=80,dpr-2"
+    image:
+      "https://images.apollo247.in/doctors/c5693ea9-f45f-4d13-ba8d-5d72418f58ed-1747392071474.jpg?tr=w-150,c-at_max,f-auto,q=80,dpr-2",
+    shifts: {
+      morning: ["09:00 AM", "09:15 AM", "09:30 AM", "09:45 AM", "10:00 AM"],
+      afternoon: ["01:00 PM", "01:15 PM", "01:30 PM", "01:45 PM", "02:00 PM"],
+      evening: ["06:00 PM", "06:15 PM", "06:30 PM", "06:45 PM"],
+    },
   },
   {
     id: 2,
@@ -21,7 +27,13 @@ export const doctors = [
     fee: 660,
     availability: "Available in 2 minutes",
     consultationMode: "In-clinic",
-    image: "https://images.apollo247.in/doctors/c5693ea9-f45f-4d13-ba8d-5d72418f58ed-1747392071474.jpg?tr=w-150,c-at_max,f-auto,q=80,dpr-2"
+    image:
+      "https://images.apollo247.in/doctors/c5693ea9-f45f-4d13-ba8d-5d72418f58ed-1747392071474.jpg?tr=w-150,c-at_max,f-auto,q=80,dpr-2",
+    shifts: {
+      morning: ["08:30 AM", "08:45 AM", "09:00 AM", "09:15 AM"],
+      afternoon: ["12:00 PM", "12:15 PM", "12:30 PM", "12:45 PM", "01:00 PM"],
+      evening: ["05:30 PM", "05:45 PM", "06:00 PM"],
+    },
   },
   {
     id: 3,
@@ -33,7 +45,13 @@ export const doctors = [
     fee: 750,
     availability: "Available in 5 minutes",
     consultationMode: "Video Call",
-    image: "https://images.apollo247.in/doctors/c5693ea9-f45f-4d13-ba8d-5d72418f58ed-1747392071474.jpg?tr=w-150,c-at_max,f-auto,q=80,dpr-2"
+    image:
+      "https://images.apollo247.in/doctors/c5693ea9-f45f-4d13-ba8d-5d72418f58ed-1747392071474.jpg?tr=w-150,c-at_max,f-auto,q=80,dpr-2",
+    shifts: {
+      morning: ["10:00 AM", "10:15 AM", "10:30 AM"],
+      afternoon: ["02:00 PM", "02:15 PM", "02:30 PM"],
+      evening: ["06:00 PM", "06:15 PM", "06:30 PM", "06:45 PM"],
+    },
   },
   {
     id: 4,
@@ -45,54 +63,12 @@ export const doctors = [
     fee: 800,
     availability: "Available in 10 minutes",
     consultationMode: "Online",
-    image: "https://images.apollo247.in/doctors/c5693ea9-f45f-4d13-ba8d-5d72418f58ed-1747392071474.jpg?tr=w-150,c-at_max,f-auto,q=80,dpr-2"
+    image:
+      "https://images.apollo247.in/doctors/c5693ea9-f45f-4d13-ba8d-5d72418f58ed-1747392071474.jpg?tr=w-150,c-at_max,f-auto,q=80,dpr-2",
+    shifts: {
+      morning: ["09:00 AM", "09:15 AM", "09:30 AM"],
+      afternoon: ["01:30 PM", "01:45 PM", "02:00 PM"],
+      evening: ["06:00 PM", "06:15 PM", "06:30 PM"],
+    },
   },
-  {
-    id: 5,
-    name: "Dr. Ramesh Gupta",
-    specialization: "Orthopedic Surgeon",
-    experience: "12 YEARS • MBBS, MS ORTHOPEDICS",
-    location: "Hyderabad",
-    clinic: "Apollo 24|7 Clinic - Telangana, Hyderabad",
-    fee: 850,
-    availability: "Available in 15 minutes",
-    consultationMode: "In-clinic",
-    image: "https://images.apollo247.in/doctors/c5693ea9-f45f-4d13-ba8d-5d72418f58ed-1747392071474.jpg?tr=w-150,c-at_max,f-auto,q=80,dpr-2"
-  },
-  {
-    id: 6,
-    name: "Dr. Neha Bansal",
-    specialization: "Dermatologist",
-    experience: "8 YEARS • MBBS, MD DERMATOLOGY",
-    location: "Hyderabad",
-    clinic: "Apollo 24|7 Clinic - Telangana, Hyderabad",
-    fee: 700,
-    availability: "Available in 20 minutes",
-    consultationMode: "Video Call",
-    image: "https://images.apollo247.in/doctors/c5693ea9-f45f-4d13-ba8d-5d72418f58ed-1747392071474.jpg?tr=w-150,c-at_max,f-auto,q=80,dpr-2"
-  },
-  {
-    id: 7,
-    name: "Dr. Vikram Singh",
-    specialization: "Pediatrician",
-    experience: "10 YEARS • MBBS, MD PEDIATRICS",
-    location: "Hyderabad",
-    clinic: "Apollo 24|7 Clinic - Telangana, Hyderabad",
-    fee: 800,
-    availability: "Available in 10 minutes",
-    consultationMode: "Online",
-    image: "https://images.apollo247.in/doctors/c5693ea9-f45f-4d13-ba8d-5d72418f58ed-1747392071474.jpg?tr=w-150,c-at_max,f-auto,q=80,dpr-2"
-  },
-  {
-    id: 8,
-    name: "Dr. Anjali Mehta",
-    specialization: "Gynecologist",
-    experience: "7 YEARS • MBBS, MD GYNECOLOGY",
-    location: "Hyderabad",
-    clinic: "Apollo 24|7 Clinic - Telangana, Hyderabad",
-    fee: 900,
-    availability: "Available in 30 minutes",
-    consultationMode: "Online",
-    image: "https://images.apollo247.in/doctors/c5693ea9-f45f-4d13-ba8d-5d72418f58ed-1747392071474.jpg?tr=w-150,c-at_max,f-auto,q=80,dpr-2"
-  }
 ];
