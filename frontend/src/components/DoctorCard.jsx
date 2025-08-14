@@ -10,12 +10,15 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { setBooking } from "../store/bookingSlice";
 
 export default function DoctorCard({ doctor }) {
   const navigate = useNavigate();
   const [open, setOpen] = useState(false);
   const [selectedDate, setSelectedDate] = useState(new Date());
   const [selectedSlot, setSelectedSlot] = useState(null);
+  const dispatch = useDispatch();
 
   // next 7 days for the date strip
   const dates = useMemo(
@@ -28,16 +31,20 @@ export default function DoctorCard({ doctor }) {
     []
   );
 
-  const handleContinue = () => {
-    console.log({
-      doctorId: doctor.id,
-      date: selectedDate.toISOString().slice(0, 10),
-      time: selectedSlot,
-    });
-    navigate("/booking-confirmation");
-    setOpen(false);
-
+const handleContinue = () => {
+  const bookingData = {
+    doctorId: doctor.id,
+    date: selectedDate.toISOString().slice(0, 10),
+    time: selectedSlot,
   };
+
+  // Save to Redux
+  dispatch(setBooking(bookingData));
+
+  // Navigate to confirmation page
+  navigate("/booking-confirmation");
+  setOpen(false);
+};
 
   // groups in fixed order
   const groups = [

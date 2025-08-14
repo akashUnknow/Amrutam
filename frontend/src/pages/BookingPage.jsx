@@ -29,8 +29,7 @@ const BookingPage = () => {
       return;
     }
     setOpen(false);
-    setOtpOpen(true); // open OTP sheet
-    // Here you’d call your send OTP API
+    setOtpOpen(true); 
   };
 
   const handleVerifyOtp = () => {
